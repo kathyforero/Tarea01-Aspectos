@@ -35,7 +35,7 @@ class ColorSubject {
     }
 
     private void notifyObservers() {
-        for (ColorObserver observer : observers) {
+	        for (ColorObserver observer : observers) {
             observer.update(color);
         }
     }
