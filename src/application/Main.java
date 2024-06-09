@@ -10,6 +10,7 @@ import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,10 +47,12 @@ public class Main extends Application {
 
             VBox root = new VBox();
             Scene scene = new Scene(root, 400, 400);
+            root.setAlignment(Pos.CENTER);
             primaryStage.setTitle("Tarea 1 - Grupo #3");
             primaryStage.setScene(scene);
             primaryStage.show();
-
+            
+            
             Button verdeButton = new Button("Verde");
             Button azulButton = new Button("Azul");
             Button rojoButton = new Button("Rojo");
