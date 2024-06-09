@@ -46,6 +46,7 @@ public class Main extends Application {
 
             VBox root = new VBox();
             Scene scene = new Scene(root, 400, 400);
+            primaryStage.setTitle("Tarea 1 - Grupo #3");
             primaryStage.setScene(scene);
             primaryStage.show();
 
