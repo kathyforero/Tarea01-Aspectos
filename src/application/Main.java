@@ -5,7 +5,9 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
@@ -44,8 +46,12 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         try {
             ColorSubject colorSubject = new ColorSubject();
-
-            VBox root = new VBox();
+            
+            Label title = new Label("Tarea #1 | Grupo #3");
+            title.setFont(new Font("Arial Black", 28)); // Establecer la fuente y tamaño
+            title.setAlignment(Pos.CENTER);
+            
+            VBox root = new VBox(15);
             Scene scene = new Scene(root, 400, 400);
             root.setAlignment(Pos.CENTER);
             primaryStage.setTitle("Tarea 1 - Grupo #3");
@@ -56,18 +62,22 @@ public class Main extends Application {
             Button verdeButton = new Button("Verde");
             Button azulButton = new Button("Azul");
             Button rojoButton = new Button("Rojo");
+            root.getChildren().add(title);
             root.getChildren().addAll(verdeButton, azulButton, rojoButton);
 
             verdeButton.setOnAction(event -> {
                 colorSubject.setColor(Color.GREEN);
+                title.setStyle("-fx-text-fill: white;");
                 botonVerdePresionado();
             });         
             azulButton.setOnAction(event -> {
                 colorSubject.setColor(Color.BLUE);
+                title.setStyle("-fx-text-fill: white;");
                 botonAzulPresionado();
             });
             rojoButton.setOnAction(event -> {
                 colorSubject.setColor(Color.RED);
+                title.setStyle("-fx-text-fill: white;");
                 botonRojoPresionado();
             });
             
