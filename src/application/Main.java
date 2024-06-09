@@ -48,7 +48,7 @@ public class Main extends Application {
             ColorSubject colorSubject = new ColorSubject();
             
             Label title = new Label("Tarea #1 | Grupo #3");
-            title.setFont(new Font("Arial Black", 28)); // Establecer la fuente y tamaño
+            title.setFont(new Font("Arial Black", 24)); // Establecer la fuente y tamaño
             title.setAlignment(Pos.CENTER);
             
             VBox root = new VBox(15);
