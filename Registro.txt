@@ -1,0 +1,7 @@
+2024-06-09 00:38:01 - Botón presionado: Verde
+2024-06-09 00:38:02 - Botón presionado: Azul
+2024-06-09 00:38:02 - Botón presionado: Rojo
+2024-06-09 00:38:03 - Botón presionado: Azul
+2024-06-09 00:38:03 - Botón presionado: Verde
+2024-06-09 00:38:04 - Botón presionado: Rojo
+2024-06-09 00:38:04 - Botón presionado: Azul
